@@ -1,4 +1,4 @@
-##builds the list of players to observe
+##builds the list of the top players on each server to observe
 import requests
 import json
 import pandas as pd

@@ -1,12 +1,13 @@
+##This will be the process regulator, responsible for updating the relevant information everyday, and then update the database
 import getmatchlist
 import getchallenger
 import dbInteractor
 import time
 import os.path
-
-key = "RGAPI-ba8eacd5-3e10-4942-92cb-ded93ceb447d"
-beginTime=1578470400000
-endTime= int((time.time())*1000)
+##get new trial key from https://developer.riotgames.com/ every day
+key = ""
+beginTime=1578470400000 ##corresponds to the beginning of season 10, from the discord
+endTime= int((time.time())*1000) ##current time
 msPerDay = 86400000
 
 getchallenger.get(key)
@@ -22,7 +23,9 @@ while time <= endTime:
 for fileNumber in range(1, 1000):
 	if not os.path.exists("master.db"):
 		dbInteractor.initializeDb()
+
 	print(str(fileNumber)+".csv")
+	
 	if os.path.exists(str(fileNumber)+".csv"):
 		print("hello")
 		try:

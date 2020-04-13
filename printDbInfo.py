@@ -1,5 +1,5 @@
 ##Thanks to https://sebastianraschka.com/Articles/2014_sqlite_in_python_tutorial.html for the quick script to view the database
-
+##This is not vital to the project, but for now serves as a quick way to view the database
 import sqlite3
 
 
