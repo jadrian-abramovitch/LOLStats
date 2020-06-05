@@ -146,3 +146,7 @@ class Champ_Ids():
 		}
 		return keyToName
 
+class positions():
+	def position_list():
+		return ['BOTTOM','MIDDLE', 'JUNGLE', 'TOP']
+

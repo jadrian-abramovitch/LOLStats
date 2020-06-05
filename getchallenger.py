@@ -5,7 +5,7 @@ import pandas as pd
 import time
 
 
-def get(key, challengerLeagueId = "974b70e3-28eb-3b60-9e9f-82a8efa19f10", server="na1"):
+def get_list(key, challengerLeagueId = "974b70e3-28eb-3b60-9e9f-82a8efa19f10", server="na1"):
 	response = requests.get("https://"+server+".api.riotgames.com/lol/league/v4/leagues/"+challengerLeagueId+"?api_key="+key)
 	text = json.dumps(response.json(), sort_keys=True, indent=4)
 

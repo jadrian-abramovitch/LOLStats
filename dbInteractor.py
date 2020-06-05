@@ -20,6 +20,7 @@ class dbInteract():
 			)""")
 		conn.commit()
 		conn.close()
+		time.sleep(30)
 
 	def writeDb(fileName, key, server="na1"):
 		iter = 0
@@ -31,6 +32,7 @@ class dbInteract():
 				##need to splice because there is a blank space at the end
 				response = requests.get("https://"+server+".api.riotgames.com/lol/match/v4/matches/"+game[0:10]+"?api_key="+key)
 				print(response.status_code)
+				#print(response.text)
 				if response.status_code !=200:
 					continue
 
@@ -78,6 +80,6 @@ class dbInteract():
 		if num < 5:
 			return None
 		average = total/num
-		print(average)
+		print(num)
 		return average
 
