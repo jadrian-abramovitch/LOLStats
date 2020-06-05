@@ -9,3 +9,4 @@ This is currently a WIP (work in progress). So far, I have most of the data pipe
 In the distant future, I will consider new statistics to track, or new visualizations to create and am open to suggestions.
 
 
+After setting up the initial data collection, it appears that the trends are too random and no meaningful insights can be taken from the data. Happy to have learned a lot about API's and databases, but didnt work out :(
